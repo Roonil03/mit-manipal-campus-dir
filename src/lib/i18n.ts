@@ -35,6 +35,33 @@ export const englishMessages = {
   "Found something wrong or missing? Help improve this directory by contributing at":
     "Found something wrong or missing? Help improve this directory by contributing at",
   "Main": "Main",
+  "Campus essentials, organized.": "Campus essentials, organized.",
+  "Everything you need around MIT Manipal, in one place.":
+    "Everything you need around MIT Manipal, in one place.",
+  "Quick access": "Quick access",
+  "Browse campus": "Browse campus",
+  "Open now": "Open now",
+  Closed: "Closed",
+  "View all": "View all",
+  "Contact": "Contact",
+  "Download contact": "Download contact",
+  "Add to favorites": "Add to favorites",
+  "Remove from favorites": "Remove from favorites",
+  "No saved items yet": "No saved items yet",
+  "Emergency contacts": "Emergency contacts",
+  "Restaurant directory": "Restaurant directory",
+  "Hostel directory": "Hostel directory",
+  "Academic resources": "Academic resources",
+  "Travel services": "Travel services",
+  "General services": "General services",
+  "Campus tools": "Campus tools",
+  "Mail to warden": "Mail to warden",
+  "Send leave request": "Send leave request",
+  Submit: "Submit",
+  Cancel: "Cancel",
+  "Required field": "Required field",
+  "Loading…": "Loading…",
+  "Try again": "Try again",
 } as const;
 
 export type TranslationKey = keyof typeof englishMessages;

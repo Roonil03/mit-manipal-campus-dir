@@ -37,6 +37,33 @@ const messages = {
   "Found something wrong or missing? Help improve this directory by contributing at":
     "कुछ गलत या अनुपस्थित मिला? यहाँ योगदान देकर इस निर्देशिका को बेहतर बनाने में मदद करें",
   Main: "मुख्य",
+  "Campus essentials, organized.": "कैंपस की ज़रूरी चीज़ें, व्यवस्थित।",
+  "Everything you need around MIT Manipal, in one place.":
+    "एमआईटी मणिपाल के आसपास आपकी हर ज़रूरत, एक ही जगह।",
+  "Quick access": "त्वरित पहुँच",
+  "Browse campus": "कैंपस देखें",
+  "Open now": "अभी खुला है",
+  Closed: "बंद",
+  "View all": "सभी देखें",
+  Contact: "संपर्क",
+  "Download contact": "संपर्क डाउनलोड करें",
+  "Add to favorites": "पसंदीदा में जोड़ें",
+  "Remove from favorites": "पसंदीदा से हटाएँ",
+  "No saved items yet": "अभी कोई सहेजी हुई चीज़ नहीं",
+  "Emergency contacts": "आपातकालीन संपर्क",
+  "Restaurant directory": "रेस्तरां निर्देशिका",
+  "Hostel directory": "छात्रावास निर्देशिका",
+  "Academic resources": "शैक्षणिक संसाधन",
+  "Travel services": "यात्रा सेवाएँ",
+  "General services": "सामान्य सेवाएँ",
+  "Campus tools": "कैंपस उपकरण",
+  "Mail to warden": "वार्डन को मेल",
+  "Send leave request": "छुट्टी अनुरोध भेजें",
+  Submit: "जमा करें",
+  Cancel: "रद्द करें",
+  "Required field": "आवश्यक फ़ील्ड",
+  "Loading…": "लोड हो रहा है…",
+  "Try again": "फिर कोशिश करें",
 } satisfies LocaleMessages;
 
 export const hindiLocale: LocaleDefinition = { code: "hi", label: "हिन्दी", messages };
