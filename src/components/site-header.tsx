@@ -20,14 +20,12 @@ import {
   MessageSquareWarning,
   ChevronDown,
   Users,
-  Languages,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import * as stylex from "@stylexjs/stylex";
 import type { StyleXStyles } from "@stylexjs/stylex";
 import { breakpoints, colors, motion, preferences, radii } from "@/styles/constants.stylex";
-import { supportedLocales } from "@/lib/locale";
-import { useLocale } from "@/components/locale-provider";
+import { LanguageMenu } from "@/components/language-menu";
 
 const SearchDialog = dynamic(() => import("@/components/search-dialog"), { ssr: false });
 const preloadSearch = () => {
@@ -228,16 +226,6 @@ const styles = stylex.create({
   icon18: { width: "1.125rem", height: "1.125rem" },
   mutedIcon: { color: colors.mutedForeground },
   actionGroup: { display: "flex", alignItems: "center", gap: "0.125rem" },
-  localeSelect: {
-    maxWidth: "5.75rem",
-    borderWidth: 0,
-    borderRadius: "9999px",
-    backgroundColor: "transparent",
-    color: colors.mutedForeground,
-    cursor: "pointer",
-    fontSize: "0.75rem",
-    paddingBlock: "0.375rem",
-  },
   iconButton: {
     display: "flex",
     width: "2.25rem",
@@ -309,7 +297,6 @@ function IconButton({
 
 export function SiteHeader() {
   const { theme, setTheme } = useTheme();
-  const { locale, setLocale } = useLocale();
   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
@@ -395,19 +382,7 @@ export function SiteHeader() {
           </nav>
 
           <div {...stylex.props(styles.actionGroup)}>
-            <Languages aria-hidden {...stylex.props(styles.icon16, styles.mutedIcon)} />
-            <select
-              aria-label="Select language"
-              value={locale.code}
-              onChange={(event) => setLocale(event.target.value)}
-              {...stylex.props(styles.localeSelect)}
-            >
-              {supportedLocales.map((supportedLocale) => (
-                <option key={supportedLocale.code} value={supportedLocale.code}>
-                  {supportedLocale.label}
-                </option>
-              ))}
-            </select>
+            <LanguageMenu />
             <IconButton
               aria-label="Open search"
               onMouseEnter={preloadSearch}
