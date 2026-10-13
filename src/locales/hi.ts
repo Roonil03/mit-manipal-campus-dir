@@ -1,0 +1,42 @@
+import { type LocaleDefinition, type LocaleMessages } from "@/lib/i18n";
+
+const messages = {
+  "Select language": "भाषा चुनें",
+  English: "अंग्रेज़ी",
+  Academics: "शिक्षा",
+  Restaurants: "रेस्तरां",
+  Hostels: "छात्रावास",
+  Travel: "यात्रा",
+  Emergency: "आपातकाल",
+  "Campus Life": "कैंपस जीवन",
+  Services: "सेवाएँ",
+  Tools: "उपकरण",
+  "Grievance Redressal": "शिकायत निवारण",
+  Favorites: "पसंदीदा",
+  More: "और",
+  Theme: "थीम",
+  "Open search": "खोज खोलें",
+  "Toggle theme": "थीम बदलें",
+  "Toggle navigation menu": "नेविगेशन मेनू बदलें",
+  "Search anything…": "कुछ भी खोजें…",
+  Search: "खोजें",
+  "Search directory": "निर्देशिका खोजें",
+  "Close search": "खोज बंद करें",
+  "No results": "कोई परिणाम नहीं",
+  "Save your contacts": "अपने संपर्क सहेजें",
+  "Your saved items": "आपकी सहेजी हुई चीज़ें",
+  "MIT Manipal": "एमआईटी मणिपाल",
+  Directory: "निर्देशिका",
+  "Campus Directory": "कैंपस निर्देशिका",
+  "Install Campus Directory": "कैंपस निर्देशिका इंस्टॉल करें",
+  "Dismiss install prompt": "इंस्टॉल संदेश हटाएँ",
+  "Install app": "ऐप इंस्टॉल करें",
+  "Not now": "अभी नहीं",
+  "Got it": "समझ गया",
+  "Add to Home Screen": "होम स्क्रीन पर जोड़ें",
+  "Found something wrong or missing? Help improve this directory by contributing at":
+    "कुछ गलत या अनुपस्थित मिला? यहाँ योगदान देकर इस निर्देशिका को बेहतर बनाने में मदद करें",
+  Main: "मुख्य",
+} satisfies LocaleMessages;
+
+export const hindiLocale: LocaleDefinition = { code: "hi", label: "हिन्दी", messages };
