@@ -7,6 +7,7 @@ Campus directory for MIT Manipal students. Look up restaurants, hostels, travel,
 Website and contributor guides are also available in:
 
 - [हिन्दी](docs/i18n/README.hi.md) · [योगदान मार्गदर्शिका](docs/i18n/CONTRIBUTING.hi.md)
+- [ಕನ್ನಡ](docs/i18n/README.kn.md) · [ಕೊಡುಗೆ ಮಾರ್ಗದರ್ಶಿ](docs/i18n/CONTRIBUTING.kn.md)
 
 Live at https://cd.coolstuff.work
 
