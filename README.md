@@ -2,6 +2,10 @@
 
 Campus directory for MIT Manipal students. Look up restaurants, hostels, travel, services, academics, grievance contacts, and emergency numbers.
 
+## Languages
+
+- [Français](docs/i18n/README.fr.md) · [Guide de contribution](docs/i18n/CONTRIBUTING.fr.md)
+
 Live at https://cd.coolstuff.work
 
 ## What's in it
