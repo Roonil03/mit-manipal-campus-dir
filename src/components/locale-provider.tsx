@@ -15,6 +15,12 @@ function translateText(node: Text, messages: LocaleDefinition["messages"]) {
 }
 
 function translateTree(root: Node, messages: LocaleDefinition["messages"]) {
+  if (root instanceof Element) {
+    for (const attribute of ["aria-label", "placeholder", "title"]) {
+      const source = root.getAttribute(attribute);
+      if (source && source in messages) root.setAttribute(attribute, messages[source as TranslationKey]);
+    }
+  }
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   let node = walker.nextNode();
   while (node) {
